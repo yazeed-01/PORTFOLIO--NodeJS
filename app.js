@@ -6,7 +6,7 @@ const ejs = require('ejs')
 app.set('view engine','ejs')
 const mongoose = require('mongoose')
 const contactPost = require('./models/ContactMePost')
-mongoose.connect('mongodb://localhost/portfolio', {useNewUrlParser: true});
+mongoose.connect('', {useNewUrlParser: true});
 const bodyParser = require('body-parser')
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:true}))
